@@ -11,7 +11,6 @@
 <body>
 
 <%
-System.out.println("Hello from JSP");
 LocalDate currentDate = LocalDate.now();
 %>
 
