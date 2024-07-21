@@ -1,3 +1,5 @@
+<%@page import="java.time.LocalDate"%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,7 +10,16 @@
 </head>
 <body>
 
-<h2>Welcome to the tennis players database!</h2>
+<%
+System.out.println("Hello from JSP");
+LocalDate currentDate = LocalDate.now();
+%>
+
+<p><i>Current Date: <%= currentDate %> </i></p>
+<p><i>Today is <%= currentDate.getDayOfWeek() %> </i></p>
+
+<h2>Welcome to the tennis player database!</h2>
+<h3>Player name: <i>${name}</i> </h3>
 
 </body>
 </html>
